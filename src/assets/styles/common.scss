@@ -8,11 +8,20 @@
     font-weight: 400;
 }
 
+.container {
+    max-width: 1180px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
 input,
 button {
     border: none;
     outline: none;
 }
 
+$green: #254336;
+$secgreen: #6B8A7A;
 $white: white;
 $black: black;

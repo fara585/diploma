@@ -16,7 +16,7 @@ $Poppin: (
 @each $name, $weight in $Poppin {
     @font-face {
         font-family: "Poppin";
-        src: url(../font/Poppins-#{$name}.ttf);
+        src: url(../font/#{$name}.ttf);
         font-weight: $weight;
     }
 }
