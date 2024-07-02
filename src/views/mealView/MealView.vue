@@ -15,9 +15,10 @@ mealSingleStore.getSingleMeal(route.params.id)
             <div class="meal__content">
                 <ul class="meal__content-list">
                     <li class="meal__content-list-items" v-for="item in 20" :key="item">
-                        {{ item }}
-                        <span class="meal__content-ing">{{ mealSingleStore.meal?.strIngredient1 }}:</span>
-                        <span class="meal__content-measure">{{ mealSingleStore.meal?.strMeasure1 }}</span>
+                        <span v-if="mealSingleStore.meal?.[`strIngredient${item}`]"
+                            class="meal__content-ing">{{ mealSingleStore.meal?.[`strIngredient${item}`] }}:</span>
+                        <span v-if="mealSingleStore.meal?.[`strMeasure${item}`]"
+                            class="meal__content-measure">{{ mealSingleStore.meal?.[`strMeasure${item}`] }}</span>
                     </li>
                 </ul>
                 <img :src="mealSingleStore.meal?.strMealThumb ?? '@/assets/img/nophoto.jpeg'" alt="" loading="lazy">

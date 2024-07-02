@@ -8,6 +8,10 @@ const apiMeals = {
     getSingleMeal(id) {
         const url = `lookup.php?i=${id}`
         return axiosClient.get(url)
+    },
+    getCategorySingle(name) {
+        const url = `filter.php?c=${name}`
+        return axiosClient.get(url)
     }
 }
 

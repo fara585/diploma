@@ -1,0 +1,18 @@
+.category {
+    padding: 40px 0;
+
+    h2 {
+        text-align: center;
+        color: $black;
+        font-size: 48px;
+        font-weight: 600;
+    }
+
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(255px, 255px));
+        gap: 30px;
+        justify-content: space-between;
+        margin-top: 40px;
+    }
+}

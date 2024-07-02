@@ -63,7 +63,7 @@ const catalog = ref(true);
                         <i class="far fa-user"></i>
                         <span>Login</span>
                     </router-link>
-                    <router-link class="nav__center-rgh-block" to="/">
+                    <router-link class="nav__center-rgh-block" to="/favourite">
                         <i class="far fa-heart"></i>
                         <span>Favorites</span>
                     </router-link>
@@ -88,7 +88,7 @@ const catalog = ref(true);
                 <router-link class="nav__btn-box" to="/">
                     <span>perfumery</span>
                 </router-link>
-                <router-link class="nav__btn-box" to="/">
+                <router-link class="nav__btn-box" to="/foods">
                     <span>foods</span>
                 </router-link>
                 <router-link class="nav__btn-box" to="/">

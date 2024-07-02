@@ -21,9 +21,25 @@ button {
     outline: none;
 }
 
-img{
+img {
     max-width: 100%;
     vertical-align: bottom;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh
+}
+
+.notFound-title {
+    color: black;
+    font-size: 5vw;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
 }
 
 $green: #254336;

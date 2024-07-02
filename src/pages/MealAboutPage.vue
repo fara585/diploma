@@ -1,5 +1,5 @@
 <script setup>
-import MealView from '../views/mealView/MealView.vue'
+import MealView from '@/views/mealView/MealView.vue'
 </script>
 <template>
   <main>
