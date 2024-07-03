@@ -1,17 +1,17 @@
 import axios from "axios";
 
-const axiosClient = axios.create({
-    baseURL: import.meta.env.VITE_API_BASE_URL,
+const axiosSecondClient = axios.create({
+    baseURL: import.meta.env.VITE_API_BASE_URL_SECOND,
     headers: {
         accept: "application/json"
     }
 });
 
-axiosClient.interceptors.request.use(async (config) => {
+axiosSecondClient.interceptors.request.use(async (config) => {
     return config
 });
 
-axiosClient.interceptors.response.use((response) => {
+axiosSecondClient.interceptors.response.use((response) => {
     if (response && response.data) {
         return response.data
     }
@@ -20,4 +20,4 @@ axiosClient.interceptors.response.use((response) => {
     throw error;
 })
 
-export default axiosClient
+export default axiosSecondClient

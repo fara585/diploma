@@ -1,7 +1,7 @@
 <script setup>
-import { ref } from 'vue';
-const lang = ref(true);
-const catalog = ref(true);
+import { ref } from "vue";
+const catalog = ref(true)
+const lang = ref(true)
 </script>
 
 <template>
@@ -53,10 +53,11 @@ const catalog = ref(true);
                     <span>Catalog</span>
                 </button>
 
-                <form action="">
+                <form @submit.prevent>
                     <i class="far fa-search"></i>
-                    <input type="search" placeholder="Search...">
+                    <input type="text" placeholder="Search...">
                 </form>
+
 
                 <div class="nav__center-rgh">
                     <router-link class="nav__center-rgh-block" to="/">
@@ -67,7 +68,7 @@ const catalog = ref(true);
                         <i class="far fa-heart"></i>
                         <span>Favorites</span>
                     </router-link>
-                    <router-link class="nav__center-rgh-block" to="/">
+                    <router-link class="nav__center-rgh-block" to="/basket">
                         <i class="fal fa-shopping-cart"></i>
                         <span>Basket</span>
                     </router-link>
@@ -78,9 +79,9 @@ const catalog = ref(true);
 
         <div class="nav__btn">
             <div class="container">
-                <router-link class="nav__btn-box" to="/">
+                <router-link class="nav__btn-box" to="/products">
                     <img src="@/assets/img/fire.png" alt="">
-                    <span>Sale</span>
+                    <span>products</span>
                 </router-link>
                 <router-link class="nav__btn-box" to="/">
                     <span>electronics</span>

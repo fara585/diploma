@@ -1,0 +1,27 @@
+.favourite {
+    padding: 40px 0;
+
+    &__title {
+        font-size: 48px;
+        text-align: center;
+        font-weight: 600;
+        color: $black;
+    }
+
+    &__cards {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(255px, 255px));
+        justify-content: space-between;
+        gap: 30px;
+    }
+}
+
+.card__btn-btn-fav {
+    background: none;
+    cursor: pointer;
+}
+
+.card__btn-btn-fav.active {
+    fill: red;
+}

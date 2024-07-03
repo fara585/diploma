@@ -12,7 +12,7 @@ mealsStore.getMeals()
         <div class="container">
             <h2>Foods</h2>
             <div class="foods__cards">
-                <Card v-for="item in mealsStore.meals" :key="item.idMeal" :card="item" />
+                <Card v-for="item in mealsStore.meals" :key="item.idMeal" :card="item" :isBtn="true" />
             </div>
         </div>
     </section>

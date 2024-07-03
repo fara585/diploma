@@ -1,4 +1,5 @@
 <script setup>
+// import Cart from "@/components/cart/Cart.vue"
 import HeaderLayout from '@/layouts/header/HeaderLayout.vue';
 import FooterLayout from '@/layouts/footer/FooterLayout.vue';
 
@@ -6,6 +7,7 @@ import FooterLayout from '@/layouts/footer/FooterLayout.vue';
 <template>
     <div class="wrapper">
         <HeaderLayout />
+        <!-- <Cart /> -->
         <FooterLayout />
         <RouterView />
     </div>

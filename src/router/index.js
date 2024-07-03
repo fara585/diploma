@@ -15,14 +15,14 @@ const router = createRouter({
       component: () => import('@/pages/MealAboutPage.vue')
     },
     {
-      path: '/favourite',
-      name: 'favourite',
-      component: () => import('@/pages/FavouritePage.vue')
-    },
-    {
       path: '/category/:category',
       name: 'category',
       component: () => import("@/pages/CategoryPage.vue")
+    },
+    {
+      path: '/favourite',
+      name: 'favourite',
+      component: () => import('@/pages/FavouritePage.vue')
     },
     {
       path: '/:pathMatch(.*)*',
@@ -33,6 +33,15 @@ const router = createRouter({
       path: '/foods',
       name: 'foods',
       component: () => import("@/views/foodsView/FoodsView.vue")
+    },{
+      path: '/products',
+      name: 'products',
+      component: () => import("@/components/cart/Cart.vue")
+    },
+    {
+      path: '/basket',
+      name: 'basket',
+      component: () => import("@/pages/BasketPage.vue")
     },
   ]
 })

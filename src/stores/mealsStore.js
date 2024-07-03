@@ -16,3 +16,5 @@ export const useMealsStore = defineStore('meal', {
     }
   }
 })
+
+
